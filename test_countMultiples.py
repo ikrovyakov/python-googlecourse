@@ -1,10 +1,9 @@
-from unittest import TestCase
+import unittest
 from testrun import countMultiples
 
 
-class TestCountMultiples(TestCase):
-    # def test_countMultiples(self):
-    #     self.fail()
+class TestCountMultiples(unittest.TestCase):
+    """Test values taken from original SingPath exercise Python >> Level 4 >>Count Multiple"""
 
     def test1(self):
         self.assertEqual(countMultiples([3, 5], 100), 46)
